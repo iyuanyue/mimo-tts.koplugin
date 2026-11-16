@@ -2,6 +2,15 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
+
+> **Fork note (unofficial):** this fork adds **soft-float Kindle support** for
+> firmware `<= 5.16.2.1.1` (e.g. **Kindle Oasis 1 / 8th gen, 2016**): `player.lua`
+> prefers a bundled soft-float `bin/kindle-gst-play-pw2` helper and writes the player
+> log to `cache/mimo_tts/mimo_tts_player.log` for troubleshooting.
+> See [docs/kindle.md](docs/kindle.md), section "Soft-float firmware".
+> Tested on Kindle Oasis (8th gen) FW 5.16.2.1.1 with a Bluetooth headset.
+> Upstream PR: https://github.com/joey5403/mimo-tts.koplugin/pull/13
+
 Turn KOReader into an audiobook player with **Xiaomi MiMo TTS (MiMo-V2.5-TTS
 series)**: the plugin extracts text from the current page, the text selection
 or the whole book, synthesizes speech with the MiMo TTS API, and plays it back

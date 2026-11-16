@@ -2,6 +2,9 @@
 
 [English](README.md) | **简体中文**
 
+
+> **本 fork 说明（非官方）**：本分支增加了**老固件（≤ 5.16.2.1.1）的软浮点 Kindle 支持**（例如 **Kindle Oasis 1 / 8 代，2016**）：`player.lua` 会优先使用随附的软浮点 `bin/kindle-gst-play-pw2`，并把播放器日志写到 `cache/mimo_tts/mimo_tts_player.log` 便于排查。详见 [docs/kindle.zh-CN.md](docs/kindle.zh-CN.md) 的「软浮点固件」一节。已在 Kindle Oasis（8 代）固件 5.16.2.1.1 + 蓝牙耳机上验证。上游 PR：https://github.com/joey5403/mimo-tts.koplugin/pull/13
+
 用 **小米 MiMo TTS（MiMo-V2.5-TTS 系列）** 给 KOReader 做“语音听书”：把当前页 / 选中文字 /
 整本书的文字提取出来，调用 MiMo TTS 合成语音，再用设备上最合适的音频后端播放。
 支持自动翻页连续听书、预置音色选择、风格标签/自然语言风格控制、音色设计与音色复刻、
